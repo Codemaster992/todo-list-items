@@ -1,0 +1,66 @@
+<app-header></app-header>
+
+<div class="text-center">
+  <h1 class="my-2">ALL TASKS LIST</h1>
+  <button mat-raised-button color="primary" (click)="addTask()">
+    Add New Task
+  </button>
+
+  <div class="d-flex justify-content-center mb-4 mt-4">
+    <input
+      type="email"
+      id="form3Example3"
+      placeholder="Search tasks"
+      (input)="applyFilter(searchValue)"
+      [(ngModel)]="searchValue"
+      class="form-control mx-2"
+      style="width: 30% !important"
+    />
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">DUE DATE</th>
+        <th scope="col">DESCRIPTION</th>
+        <th scope="col">PRIORITY</th>
+        <th scope="col">ACTIONS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let value of taskList.slice().reverse(); let i = index">
+        <th class="pt-3" scope="row">{{ value.id }}</th>
+        <td class="pt-3">{{ value.dueDate | date : "medium" || "-" }}</td>
+        <td class="pt-3">{{ value.description || "-" }}</td>
+        <td class="pt-3">{{ value.priority || "-" }}</td>
+        <td>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="editTask(value)"
+            style="margin-right: 5px"
+          >
+            Edit
+          </button>
+          <button mat-raised-button color="warn" (click)="deleteTask(value.id)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 *ngIf="!(taskList.length > 0)">Data Not Found</h3>
+
+  <div class="d-flex justify-content-center">
+    <mat-paginator
+      [length]="length"
+      [pageSize]="pageSize"
+      [pageIndex]="pageIndex"
+      [pageSizeOptions]="pageSizeOptions"
+      (page)="getData($event)"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </div>
+</div>

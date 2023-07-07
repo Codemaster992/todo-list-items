@@ -1,0 +1,94 @@
+{
+  "Users": [
+    {
+      "firstName": "Testing",
+      "lastName": "Final",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 1
+    },
+    {
+      "firstName": "jansher",
+      "lastName": "tahir",
+      "email": "jan@g.co",
+      "password": "jan1234",
+      "id": 2
+    },
+    {
+      "firstName": "sana",
+      "lastName": "mir",
+      "email": "sana@gmail.com",
+      "password": "sana1234",
+      "id": 3
+    },
+    {
+      "firstName": "sana",
+      "lastName": "122",
+      "email": "sana34@gmail.com",
+      "password": "mir20",
+      "id": 4
+    }
+  ],
+  "Tasks": [
+    {
+      "dueDate": "2023-07-13T19:00:00.000Z",
+      "description": "This is First Task",
+      "priority": "High",
+      "id": 17
+    },
+    {
+      "dueDate": "2023-07-03T19:00:00.000Z",
+      "description": "12345432",
+      "priority": "Low",
+      "id": 19
+    },
+    {
+      "dueDate": "2023-07-10T19:00:00.000Z",
+      "description": "create task",
+      "priority": "Medium",
+      "id": 20
+    },
+    {
+      "dueDate": "2023-07-23T19:00:00.000Z",
+      "description": "description",
+      "priority": "High",
+      "id": 21
+    },
+    {
+      "dueDate": "2023-07-19T19:00:00.000Z",
+      "description": "localhost",
+      "priority": "Low",
+      "id": 22
+    },
+    {
+      "dueDate": "2023-07-21T19:00:00.000Z",
+      "description": "welcomeeee to the task listtttt",
+      "priority": "High",
+      "id": 23
+    },
+    {
+      "dueDate": "2023-07-25T19:00:00.000Z",
+      "description": "materialllll",
+      "priority": "Medium",
+      "id": 24
+    },
+    {
+      "dueDate": "2020-01-04T19:00:00.000Z",
+      "description": "olddddd",
+      "priority": "Low",
+      "id": 25
+    },
+    {
+      "dueDate": "2023-07-17T19:00:00.000Z",
+      "description": "newwwwwww",
+      "priority": "Medium",
+      "id": 26
+    },
+    {
+      "dueDate": "2023-07-19T19:00:00.000Z",
+      "description": "pagination ",
+      "priority": "High",
+      "id": 29
+    }
+  ]
+}
