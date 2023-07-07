@@ -1,6 +1,14 @@
 # TodoListWithCrud
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.
+
+## Run JSON server
+
+Go the Server Folder and Run `json-server -p 3001 db.json` for run the JSON server
+
+## Install all required packages
+
+Run `npm install` for install all the required packages
 
 ## Development server
 
