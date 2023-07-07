@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.
 
+## Technologies 
+
+Angular Materials, Reactive Forms, Pagination, Form Validations, Toasters, JSON Server
+
 ## Run JSON server
 
 Go the Server Folder and Run `json-server -p 3001 db.json` for run the JSON server
